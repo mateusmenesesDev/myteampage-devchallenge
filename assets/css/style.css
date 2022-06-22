@@ -98,13 +98,12 @@ footer a, footer a:visited {
     color: #000;
 }
 
+
 @media (max-width:819px){
 
     .container-head {
         flex-direction: column;
         gap: 38px;
-        /* justify-content: center; */
-        /* align-items: center; */
     }
     .container-head .team-description h2{
         margin-bottom: 10px;
@@ -138,4 +137,53 @@ footer a, footer a:visited {
         left: 85px;
     }
     
+}
+
+@media (max-width:374px){
+
+    .container {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container .container-head{
+        gap: 20px;
+        width: 95vw;
+        text-align: center;
+        /* padding: 10px; */
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .container .container-head p{
+        text-align: start;
+        font-size: 14px;
+    }
+    .team-members .box .photo-box .worker-photo{
+        min-width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .team-members .box {
+        min-width: 100vw;
+    }
+
+    .team-members .box .worker-name {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    .team-members .box .photo-box p {
+        margin-top: 5px;
+        transform: rotate(0deg);
+        position: static;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .team-members .box .photo-box img {
+        margin-top: 0;
+    }
 }
