@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 935px;
+    margin: auto;
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.container-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.container-head .text-title h1{
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+}
+
+.container-head .team-description {
+    max-width: 439px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-head .team-description h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.container-head .team-description p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.team-members {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* height: 1030px; */
+    margin-bottom: 115px;
+}
+.box {
+    max-width: 311px;
+}
+
+.box.low {
+    margin-top: 115px;
+}
+
+.team-members .box .photo-box .worker-photo{
+    max-width: 240px;
+}
+.team-members .box .photo-box img{
+    width: 100%;
+}
+
+.team-members .box .photo-box p{
+    position: relative;
+    top: -230px;
+    left: 135px;
+    font-size: 12px;
+    /* width: 235px; */
+    /* height: 16px; */
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+}
+
+.team-members .box .worker-name{
+    margin-top: 15px;
+    line-height: 27px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+footer {
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a, footer a:visited {
+    
+    color: #000;
+}
+
+@media (max-width:819px){
+
+    .container-head {
+        flex-direction: column;
+        gap: 38px;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .container-head .team-description h2{
+        margin-bottom: 10px;
+    }
+    
+    .container-head .team-description p {
+        font-size: 18px;
+    }
+    
+    .team-members .box .worker-name{
+        font-size: 14px;
+    }
+    
+    .team-members .box.low {
+        margin-top: 0;
+    }
+    
+    .box:nth-of-type(even) img {
+        margin-top: 150px;
+    }
+    
+}
+
+@media (max-width:554px){
+
+    .team-members .box .photo-box .worker-photo{
+        max-width: 150px;
+    }
+    .team-members .box .photo-box p {
+        top: -150px;
+        left: 85px;
+    }
+    
+}
